@@ -11,7 +11,7 @@ class Home extends Component {
                     <hr className="my-2" />
                     <p>Please checkout my website by visiting the links at the upper right. Thank you and have a nice day.</p>
                     <p className="lead">
-                        <Button color="primary">Learn More</Button>
+                        <Button color="primary">Contact Us</Button>
                     </p>
                 </Jumbotron>
             </div>
