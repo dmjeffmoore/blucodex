@@ -8,6 +8,7 @@ import About from "./pages/about";
 import Services from "./pages/services";
 import Contact from "./pages/contact";
 import Privacy from "./pages/privacy";
+import Terms from "./pages/terms";
 
 
 class App extends Component {
@@ -16,7 +17,8 @@ class App extends Component {
             <Router>
                 <div>
                     <NavBar />
-                    <Route name="Privacy Policy" exact path="/privacy-policy" component={Privacy} />
+                    <Route name="Terms" exact path="/terms-and-conditions" component={Terms} />
+                    <Route name="Privacy" exact path="/privacy-policy" component={Privacy} />
                     <Route name="Contact" exact path="/contact" component={Contact} />
                     <Route name="Services" exact path="/services" component={Services} />
                     <Route name="About" exact path="/about" component={About} />

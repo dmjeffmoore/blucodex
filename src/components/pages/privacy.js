@@ -3,12 +3,10 @@ import React, { Component } from 'react';
 class Privacy extends Component {
     render() {
         return (
-            <div className="privacy">
+            <div className="legal">
                 <h1>Privacy Policy</h1>
 
-
                 <p>Effective date: November 21, 2018</p>
-
 
                 <p>Blucodex Technology Consulting ("us", "we", or "our") operates the http://www.blucodex.com website (the "Service").</p>
 
@@ -105,9 +103,10 @@ class Privacy extends Component {
                 <h2>Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy, please contact us:</p>
                 <ul>
-                    <li>By email: sean.pattee@blucodex.com</li>
+                    <li>By email: someEmail@email.com</li>
 
                 </ul>
+                <br/>
                 <br/>
                 <small>This privacy policy was generated using <a href="https://www.freeprivacypolicy.com">FreePrivacyPolicy.com</a>.</small>
             </div>

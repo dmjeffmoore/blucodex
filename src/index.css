@@ -1,7 +1,5 @@
-footer {
-    margin-left: 16px;
-}
+footer { margin-left: 16px; }
 
-.privacy {
-    margin-left: 16px;
-}
+a { color: inherit; }
+
+.legal { margin-left: 16px; }
