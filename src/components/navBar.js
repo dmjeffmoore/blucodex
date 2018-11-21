@@ -6,7 +6,7 @@ class NavBar extends Component {
         return (
             <div>
                 <Navbar color="light" light expand="md">
-                    <NavbarBrand href="/">Sean's Consulting</NavbarBrand>
+                    <NavbarBrand href="/">Blucodex</NavbarBrand>
                         <Nav className="ml-auto" navbar>
                             <NavItem>
                                 <NavLink href="/about/">About</NavLink>
