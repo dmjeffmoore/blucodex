@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <footer>
                 <div>
-
+                    <small>Copyright &copy; {new Date().toISOString().substr(0,4)} Blucodex Technology Consulting</small>
                 </div>
             </footer>
         )
