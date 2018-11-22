@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 class Footer extends Component {
     render() {
         return (
-            <footer>
+            <footer className="fixed-bottom">
                 <div>
                     <small>Copyright &copy; {new Date().toISOString().substr(0,4)} Blucodex Technology Consulting
                         &nbsp;-&nbsp;<Link to="/privacy-policy">Privacy Policy</Link>

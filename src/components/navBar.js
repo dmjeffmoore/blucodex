@@ -19,7 +19,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="indigo" dark expand="md">
+                <Navbar color="indigo" fixed="top" dark expand="md">
                     <NavbarBrand>
                         <strong className="white-text">Blucodex</strong>
                     </NavbarBrand>
@@ -33,16 +33,16 @@ class NavBar extends React.Component {
                     >
                         <NavbarNav right>
                             <NavItem>
-                                <NavLink to="/">Home</NavLink>
+                                <NavLink to="/"><i className="fa fa-home" aria-hidden="true"/>Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/about">About</NavLink>
+                                <NavLink to="/about"><i className="fa fa-group" aria-hidden="true"/>About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/services">Services</NavLink>
+                                <NavLink to="/services"><i className="fa fa-shield" aria-hidden="true"/>Services</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/contact">Contact</NavLink>
+                                <NavLink to="/contact"><i className="fa fa-send" aria-hidden="true"/>Contact</NavLink>
                             </NavItem>
                         </NavbarNav>
                     </Collapse>

@@ -1,0 +1,33 @@
+#contact .view {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#contact h6 {
+    line-height: 1.7;
+}
+
+#contact .navbar {
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+#contact .top-nav-collapse {
+    background: #424f95 !important;
+}
+
+@media (max-width: 768px) {
+    #contact .navbar:not(.top-nav-collapse) {
+        background: #424f95 !important;
+    }
+}
+
+#contact .form-check {
+    margin-bottom: 0!important;
+}
+
+#contact i {
+    color: #9e9e9e!important;
+}
