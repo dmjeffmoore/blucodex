@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Mask, Row, Col, Fa, Button, View, Container, Card, CardBody, Input } from 'mdbreact';
-import './contact.css'
+import { Mask, Row, Col, Button, View, Container, Card, CardBody, Input } from 'mdbreact';
 
 class Contact extends Component {
     render() {

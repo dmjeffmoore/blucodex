@@ -10,3 +10,61 @@ a {
 a:not(.activeLink):hover {
     text-decoration: none;
 }
+
+#contact .view {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/images/89.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#contact h6 {
+    line-height: 1.7;
+}
+
+#contact .top-nav-collapse {
+    background: #424f95 !important;
+}
+
+#contact .form-check {
+    margin-bottom: 0!important;
+}
+
+#contact i {
+    color: #9e9e9e!important;
+}
+
+#home .gradient {
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);
+    /*background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.7)), to(rgba(29, 210, 177, 0.7)));*/
+    /*background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);*/
+    /*background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.7), rgba(29, 210, 177, 0.7) 100%);*/
+}
+
+#home .view {
+    background-image: url('https://mdbootstrap.com/img/Photos/Others/architecture.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#home h6 {
+    line-height: 1.7;
+}
+
+#home .navbar {
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+}
+
+#home .top-nav-collapse {
+    background: #424f95 !important;
+}
+
+@media (max-width: 768px) {
+    #home .navbar:not(.top-nav-collapse) {
+        background: #424f95 !important;
+    }
+}
