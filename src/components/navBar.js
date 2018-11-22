@@ -19,7 +19,7 @@ class NavBar extends React.Component {
     render() {
         return (
             <div>
-                <Navbar color="indigo" fixed="top" dark expand="md">
+                <Navbar color="indigo" dark expand="md">
                     <NavbarBrand>
                         <strong className="white-text">Blucodex</strong>
                     </NavbarBrand>
