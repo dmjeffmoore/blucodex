@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class Footer extends Component {
     render() {
@@ -6,9 +7,9 @@ class Footer extends Component {
             <footer>
                 <div>
                     <small>Copyright &copy; {new Date().toISOString().substr(0,4)} Blucodex Technology Consulting
-                        &nbsp;-&nbsp;<a href="/privacy-policy/">Privacy Policy</a>
-                        &nbsp;-&nbsp;<a href="/terms-and-conditions/">Terms</a>
-                        &nbsp;-&nbsp;<a href="/contact/">Contact</a>
+                        &nbsp;-&nbsp;<Link to="/privacy-policy">Privacy Policy</Link>
+                        &nbsp;-&nbsp;<Link to="/terms-and-conditions">Terms & Conditions</Link>
+                        &nbsp;-&nbsp;<Link to="/contact">Contact</Link>
                     </small>
                 </div>
             </footer>

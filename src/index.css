@@ -1,5 +1,12 @@
 footer { margin-left: 16px; }
 
-a { color: inherit; }
-
 .legal { margin-left: 16px; }
+
+a {
+    outline: 0;
+    color: inherit;
+}
+
+a:not(.activeLink):hover {
+    text-decoration: none;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button } from "reactstrap";
+import { withRouter } from "react-router-dom";
 
 class Home extends Component {
     render() {
@@ -11,7 +12,7 @@ class Home extends Component {
                     <hr className="my-2" />
                     <p>Please checkout my website by visiting the links at the upper right. Thank you and have a nice day.</p>
                     <p className="lead">
-                        <Button color="primary">Contact Us</Button>
+                        <Button color="primary" onClick={() => this.props.history.push("/contact")}>Contact Us</Button>
                     </p>
                 </Jumbotron>
             </div>
@@ -19,4 +20,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default withRouter(Home);
