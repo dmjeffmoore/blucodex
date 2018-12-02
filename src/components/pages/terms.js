@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Terms extends Component {
     render() {
         return (
-            <div className="legal">
+            <div className="legal pt-5">
                 <h1>Terms & Conditions</h1>
 
                 <p>Effective date: November 21, 2018</p>
@@ -141,7 +141,6 @@ class Terms extends Component {
                 </ul>
                 <br/>
                 <br/>
-                <small>This privacy policy was generated using <a href="https://termsandconditionstemplate.com/">termsandconditionstemplate.com</a>.</small>
             </div>
         )
     }

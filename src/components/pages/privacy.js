@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Privacy extends Component {
     render() {
         return (
-            <div className="legal">
+            <div className="legal pt-5">
                 <h1>Privacy Policy</h1>
 
                 <p>Effective date: November 21, 2018</p>
@@ -108,7 +108,6 @@ class Privacy extends Component {
                 </ul>
                 <br/>
                 <br/>
-                <small>This privacy policy was generated using <a href="https://www.freeprivacypolicy.com">FreePrivacyPolicy.com</a>.</small>
             </div>
         )
     }

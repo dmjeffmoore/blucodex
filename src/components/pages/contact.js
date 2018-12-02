@@ -9,13 +9,11 @@ class Contact extends Component {
                     <Mask className="d-flex justify-content-center align-items-center" overlay="indigo-strong">
                         <Container>
                             <Row>
-                                <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
-                                    <h1 className="display-4 font-weight-bold">Lorem ipsum </h1>
+                                <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5 pt-5">
+                                    <h1 className="pt-5 display-4 font-weight-bold">Contact us</h1>
                                     <hr className="hr-light"/>
-                                    <h6 className="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem repellendus quasi fuga nesciunt
-                                        dolorum nulla magnam veniam sapiente, fugiat! Commodi sequi non animi ea dolor molestiae
-                                        iste.</h6>
-                                    <Button outline color="white">Learn More</Button>
+                                    <h6 className="mb-4">We are cool, so contact us.</h6>
+                                    <Button outline color="white">Our Services</Button>
                                 </div>
                                 <Col md="6" xl="5" className="mb-4">
                                     <Card className="dark-grey-text">
