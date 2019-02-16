@@ -1,6 +1,7 @@
 import React from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavItem, NavbarToggler, Collapse, MDBIcon } from "mdbreact";
+import { Navbar, NavbarBrand, NavbarNav, NavItem, NavbarToggler, Collapse } from "mdbreact";
 import { HashLink as Link } from 'react-router-hash-link';
+import logo from '../images/logo.png'
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -23,7 +24,7 @@ class NavBar extends React.Component {
                 <Navbar color="light-blue darken-3" dark expand="md">
                     <NavbarBrand>
                         <div className="navbar-brand">
-                            <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo"/>
+                            <img src={logo} height="30" alt="logo"/>
                         </div>
                     </NavbarBrand>
                     <NavbarToggler

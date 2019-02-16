@@ -9,7 +9,6 @@ class Footer extends Component {
                     <small>Copyright &copy; {new Date().toISOString().substr(0,4)} Blucodex Technology Consulting
                         &nbsp;-&nbsp;<Link to="/privacy-policy">Privacy Policy</Link>
                         &nbsp;-&nbsp;<Link to="/terms-and-conditions">Terms & Conditions</Link>
-                        &nbsp;-&nbsp;<Link smooth to="/index#contact">Contact</Link>
                     </small>
                 </div>
             </footer>

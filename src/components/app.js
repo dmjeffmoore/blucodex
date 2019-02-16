@@ -13,7 +13,7 @@ class App extends Component {
         return (
             <Router>
                 <div>
-                    <NavBar />
+                    <NavBar/>
                     <Switch>
                         <Route name="Terms" exact path="/terms-and-conditions" component={Terms} />
                         <Route name="Privacy" exact path="/privacy-policy" component={Privacy} />
@@ -23,7 +23,7 @@ class App extends Component {
                         <Route name="About" exact path="/index#about" component={Home}/>
                         <Route name="Home" path="/" component={Home}/>
                     </Switch>
-                    <Footer />
+                    <Footer/>
                 </div>
             </Router>
         )

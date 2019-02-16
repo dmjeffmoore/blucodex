@@ -13,7 +13,6 @@ class Contact extends Component {
                                     <h1 className="pt-5 display-4 font-weight-bold">Contact us</h1>
                                     <hr className="hr-light"/>
                                     <h6 className="mb-4">We are cool, so contact us.</h6>
-                                    <Button outline color="white">Our Services</Button>
                                 </div>
                                 <Col md="6" xl="5" className="mb-4">
                                     <Card className="dark-grey-text">
