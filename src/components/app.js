@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import NavBar from './navBar';
 import Footer from './footer';
 import Home from './pages/home';
-import About from "./pages/about";
-import Services from "./pages/services";
-import Contact from "./pages/contact";
 import Privacy from "./pages/privacy";
 import Terms from "./pages/terms";
 
@@ -17,12 +14,15 @@ class App extends Component {
             <Router>
                 <div>
                     <NavBar />
-                    <Route name="Terms" exact path="/terms-and-conditions" component={Terms} />
-                    <Route name="Privacy" exact path="/privacy-policy" component={Privacy} />
-                    <Route name="Contact" exact path="/contact" component={Contact} />
-                    <Route name="Services" exact path="/services" component={Services} />
-                    <Route name="About" exact path="/about" component={About} />
-                    <Route name="Home" exact path="/" component={Home} />
+                    <Switch>
+                        <Route name="Terms" exact path="/terms-and-conditions" component={Terms} />
+                        <Route name="Privacy" exact path="/privacy-policy" component={Privacy} />
+
+                        <Route name="Contact" exact path="/index#contact" component={Home}/>
+                        <Route name="Services" exact path="/index#services" component={Home}/>
+                        <Route name="About" exact path="/index#about" component={Home}/>
+                        <Route name="Home" path="/" component={Home}/>
+                    </Switch>
                     <Footer />
                 </div>
             </Router>

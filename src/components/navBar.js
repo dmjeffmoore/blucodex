@@ -1,5 +1,6 @@
 import React from 'react';
-import { Navbar, NavbarBrand, NavbarNav, NavItem, NavLink, NavbarToggler, Collapse } from "mdbreact";
+import { Navbar, NavbarBrand, NavbarNav, NavItem, NavbarToggler, Collapse, MDBIcon } from "mdbreact";
+import { HashLink as Link } from 'react-router-hash-link';
 
 class NavBar extends React.Component {
     constructor(props) {
@@ -21,7 +22,9 @@ class NavBar extends React.Component {
             <div>
                 <Navbar color="light-blue darken-3" dark expand="md">
                     <NavbarBrand>
-                        <strong className="white-text">Blucodex</strong>
+                        <div className="navbar-brand">
+                            <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="mdb logo"/>
+                        </div>
                     </NavbarBrand>
                     <NavbarToggler
                         onClick={this.toggleCollapse}
@@ -33,16 +36,16 @@ class NavBar extends React.Component {
                     >
                         <NavbarNav right>
                             <NavItem>
-                                <NavLink to="/"><i className="fa fa-home" aria-hidden="true"/>Home</NavLink>
+                                <div className="ml-2 white-text"><Link smooth to="/">Home</Link></div>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/about"><i className="fa fa-group" aria-hidden="true"/>About</NavLink>
+                                <div className="ml-2 white-text"><Link smooth to="/index#about">About</Link></div>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/services"><i className="fa fa-shield" aria-hidden="true"/>Services</NavLink>
+                                <div className="ml-2 white-text"><Link smooth to="/index#services">Services</Link></div>
                             </NavItem>
                             <NavItem>
-                                <NavLink to="/contact"><i className="fa fa-send" aria-hidden="true"/>Contact</NavLink>
+                                <div className="ml-2 white-text"><Link smooth to="/index#contact">Contact</Link></div>
                             </NavItem>
                         </NavbarNav>
                     </Collapse>

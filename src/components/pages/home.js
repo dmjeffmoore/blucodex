@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Button, Col, Container, Mask, Row, View } from "mdbreact";
+import {Button, Card, CardBody, Col, Container, Input, Mask, MDBIcon, Row, View} from "mdbreact";
+
+import About from "./about";
+import Services from "./services";
+import Contact from "./contact";
 
 class Home extends Component {
     render() {
@@ -25,16 +29,13 @@ class Home extends Component {
                     </Mask>
                 </View>
 
-                {/*<Container>*/}
-                    {/*<Row className="py-5">*/}
-                        {/*<Col md="12" className="text-center">*/}
-                            {/*<p>*/}
-                                {/*We are crazy about cybersecurity. We are awesome at it.*/}
-                            {/*</p>*/}
-                        {/*</Col>*/}
-                    {/*</Row>*/}
-                {/*</Container>*/}
+                <About/>
+                <Services/>
+                <Contact/>
+
             </div>
+
+
         )
     }
 }
