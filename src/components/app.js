@@ -16,7 +16,7 @@ class App extends Component {
                     <NavBar/>
                     <Switch>
                         <Route name="Terms" exact path="/terms-and-conditions" component={Terms} />
-                        <Route name="Privacy" exact path="/privacy-policy" component={Privacy} />
+                        {/*<Route name="Privacy" exact path="/privacy-policy" component={Privacy} />*/}
 
                         <Route name="Contact" exact path="/index#contact" component={Home}/>
                         <Route name="Services" exact path="/index#services" component={Home}/>

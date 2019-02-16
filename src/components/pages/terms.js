@@ -25,12 +25,14 @@ class Terms extends Component {
                     of a fixed duration, or any other means, for the express purpose of meeting the Client’s needs in respect
                     of provision of the Company’s stated services/products, in accordance with and subject to, prevailing law
                     of . Any use of the above terminology or other words in the singular, plural,
-                    capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p><h2>Cookies</h2>
-                <p>We employ the use of cookies. By using Blucodex Technology Consulting's website you consent to the use of cookies
-                    in accordance with Blucodex Technology Consulting’s privacy policy.</p><p>Most of the modern day interactive web sites
-                use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site
-                to enable the functionality of this area and ease of use for those people visiting. Some of our
-                affiliate / advertising partners may also use cookies.</p><h2>License</h2>
+                    capitalisation and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+                {/*<h2>Cookies</h2>*/}
+                {/*<p>We employ the use of cookies. By using Blucodex Technology Consulting's website you consent to the use of cookies*/}
+                    {/*in accordance with Blucodex Technology Consulting’s privacy policy.</p><p>Most of the modern day interactive web sites*/}
+                {/*use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site*/}
+                {/*to enable the functionality of this area and ease of use for those people visiting. Some of our*/}
+                {/*affiliate / advertising partners may also use cookies.</p>*/}
+                <h2>License</h2>
                 <p>Unless otherwise stated, Blucodex Technology Consulting and/or it’s licensors own the intellectual property rights for
                     all material on Blucodex Technology Consulting. All intellectual property rights are reserved. You may view and/or print
                     pages from http://www.blucodex.com for your own personal use subject to restrictions set in these terms and conditions.</p>
@@ -141,7 +143,7 @@ class Terms extends Component {
                 <h2>Contact Us</h2>
                 <p>If you have any questions about this Terms & Conditions, please contact us:</p>
                 <ul>
-                    <li>By email: someEmail@email.com</li>
+                    <li>By email: information@blucodex.com</li>
 
                 </ul>
                 <br/>

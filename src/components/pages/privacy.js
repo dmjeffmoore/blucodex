@@ -108,7 +108,7 @@ class Privacy extends Component {
                 <h2>Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy, please contact us:</p>
                 <ul>
-                    <li>By email: someEmail@email.com</li>
+                    <li>By email: information@blucodex.com</li>
 
                 </ul>
                 <br/>
