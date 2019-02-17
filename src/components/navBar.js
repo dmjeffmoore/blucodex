@@ -37,7 +37,7 @@ class NavBar extends React.Component {
                     >
                         <NavbarNav right>
                             <NavItem>
-                                <div className="ml-2 white-text"><Link smooth to="/">Home</Link></div>
+                                <div className="ml-2 white-text"><Link smooth to="/index">Home</Link></div>
                             </NavItem>
                             <NavItem>
                                 <div className="ml-2 white-text"><Link smooth to="/index#about">About</Link></div>
