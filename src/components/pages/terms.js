@@ -12,7 +12,6 @@ class Terms extends Component {
                 <h1>Terms & Conditions</h1>
 
                 <p>Effective date: November 21, 2018</p>
-
                 <p>These terms and conditions outline the rules and regulations for the use of Blucodex Technology Consulting's Website.</p>
                 <p>By accessing this website we assume you accept these terms and conditions in full. Do not continue to use Blucodex Technology Consulting's website
                     if you do not accept all of the terms and conditions stated on this page.</p>
@@ -143,7 +142,7 @@ class Terms extends Component {
                 <h2>Contact Us</h2>
                 <p>If you have any questions about this Terms & Conditions, please contact us:</p>
                 <ul>
-                    <li>By email: information@blucodex.com</li>
+                    <li>By email: Sean.Pattee@blucodex.com</li>
 
                 </ul>
                 <br/>
