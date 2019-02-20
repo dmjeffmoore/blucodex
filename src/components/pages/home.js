@@ -15,9 +15,9 @@ class Home extends Component {
                         <Container>
                             <Row>
                                 <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5">
-                                    <h1 className="h1-responsive font-weight-bold mt-sm-5">Let us solve your security problems </h1>
+                                    <h1 className="h1-responsive font-weight-bold mt-sm-5">Protect your business with our wide array of security services</h1>
                                     <hr className="hr-light"/>
-                                    <h6 className="mb-4">We are awesome and have years of experience.</h6>
+                                    <h6 className="mb-4">Practical solutions for complex problems</h6>
                                     <Link smooth to="/index#services">
                                         <Button outline color="white">Our Services</Button>
                                     </Link>

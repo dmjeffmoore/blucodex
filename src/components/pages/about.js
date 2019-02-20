@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, MDBIcon } from 'mdbreact';
+import { Container, Row, Col, MDBIcon, MDBView } from 'mdbreact';
 
 class About extends Component {
     render() {
         return(
             <Container id="about">
                 <section className="text-center my-5">
-                    <h2 className="h1-responsive font-weight-bold my-5">Why are we so great?</h2>
+                    <h2 className="h1-responsive font-weight-bold my-5">Why Choose Blucodex?</h2>
                     <p className="lead grey-text w-responsive mx-auto mb-5">Because we are super cool.</p>
                     <Row>
                         <Col md="4">
