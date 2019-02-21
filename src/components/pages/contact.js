@@ -11,8 +11,6 @@ class Contact extends Component {
                             <Row>
                                 <div className="white-text text-center text-md-left col-md-6 mt-xl-5 mb-5 pt-5">
                                     <h1 className="pt-5 display-4 font-weight-bold">Contact us</h1>
-                                    <hr className="hr-light"/>
-                                    <h6 className="mb-4">We are cool, so contact us.</h6>
                                 </div>
                                 <Col md="6" xl="5" className="mb-4">
                                     <Card className="dark-grey-text">
