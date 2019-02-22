@@ -36,7 +36,7 @@ class Services extends Component {
                             </Col>
                             <Col lg="4" md="12" className="mb-lg-0 mb-4">
                                 <View className="overlay rounded z-depth-1 h-50" waves>
-                                    <img src="https://marketplace.canva.com/MACWo8Nemso/1/screen/canva-hacking%2C-hacker%2C-computer%2C-internet%2C-security%2C-data-MACWo8Nemso.jpg" alt="forensics" className="img-fluid"/>
+                                    <img src="https://images.pexels.com/photos/15798/night-computer-hdd-hard-drive.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="forensics" className="img-fluid"/>
                                 </View>
                                 <CardBody className="pb-0">
                                     <h4 className="font-weight-bold my-3">Digital Forensics</h4>
@@ -44,7 +44,7 @@ class Services extends Component {
                             </Col>
                             <Col lg="4" md="12" className="mb-lg-0 mb-4">
                                 <View className="overlay rounded z-depth-1 h-50" waves>
-                                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e5a31d03ddee66863a599421f792e07b&auto=format&fit=crop&w=500&q=60" alt="pen testing" className="img-fluid"/>
+                                    <img src="https://images.pexels.com/photos/207580/pexels-photo-207580.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="pen testing" className="img-fluid"/>
                                 </View>
                                 <CardBody className="pb-0">
                                     <h4 className="font-weight-bold my-3">Penetration Testing</h4>
