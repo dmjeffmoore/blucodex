@@ -24,12 +24,12 @@ class Contact extends Component {
                                                 <div className="text-center mt-3 black-text">
                                                     <Button color="indigo" type="submit">Send</Button>
                                                 </div>
+                                                <iframe name="hiddenFrame" width="0" height="0" style={{display: "none"}}/>
                                             </form>
                                         </CardBody>
                                     </Card>
                                 </Col>
                             </Row>
-                            <iframe name="hiddenFrame" width="0" height="0" style="display: none;"/>
                         </Container>
                     </Mask>
                 </View>
