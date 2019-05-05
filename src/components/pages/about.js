@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row, Col, MDBIcon, MDBView } from 'mdbreact';
+import { Container, Row, Col, MDBIcon } from 'mdbreact';
 
 class About extends Component {
     render() {

@@ -15,14 +15,19 @@ class Contact extends Component {
                                 <Col md="6" xl="5" className="mb-4">
                                     <Card className="dark-grey-text">
                                         <CardBody className="z-depth-2">
-                                            <form action="/.netlify/functions/email" method="POST" target="hiddenFrame">
+                                            <form action="/.netlify/functions/email" method="POST" target="hiddenFrame" name="contactForm" id="contactForm">
                                                 <h3 className="dark-grey-text text-center"><strong>Write to us:</strong></h3>
                                                 <hr/>
-                                                <Input label="Your name" icon="user" name="name"/>
-                                                <Input label="Your email" icon="envelope" name="from"/>
-                                                <Input label="Your message" icon="pencil" name="message" type="textarea" rows="3"/>
+                                                <Input label="Your name" icon="user" name="name" id="name"/>
+                                                <Input label="Your email" icon="envelope" name="email" id="email"/>
+                                                <Input label="Your message" icon="pencil" name="message" id="message" type="textarea" rows="3"/>
                                                 <div className="text-center mt-3 black-text">
-                                                    <Button color="indigo" type="submit">Send</Button>
+                                                    <Button color="indigo" onClick={() => {
+                                                        document.getElementById("contactForm").submit();
+                                                        document.getElementById("name").value = "";
+                                                        document.getElementById("email").value = "";
+                                                        document.getElementById("message").value = "";
+                                                    }}>Send</Button>
                                                 </div>
                                                 <iframe name="hiddenFrame" width="0" height="0" style={{display: "none"}}/>
                                             </form>
