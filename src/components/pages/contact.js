@@ -15,7 +15,7 @@ class Contact extends Component {
                                 <Col md="6" xl="5" className="mb-4">
                                     <Card className="dark-grey-text">
                                         <CardBody className="z-depth-2">
-                                            <form action="/.netlify/functions/email" method="POST">
+                                            <form action="/.netlify/functions/email" method="POST" target="hiddenFrame">
                                                 <h3 className="dark-grey-text text-center"><strong>Write to us:</strong></h3>
                                                 <hr/>
                                                 <Input label="Your name" icon="user" name="name"/>
@@ -29,6 +29,7 @@ class Contact extends Component {
                                     </Card>
                                 </Col>
                             </Row>
+                            <iframe name="hiddenFrame" width="0" height="0" style="display: none;"/>
                         </Container>
                     </Mask>
                 </View>
