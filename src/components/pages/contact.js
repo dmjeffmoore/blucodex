@@ -15,17 +15,16 @@ class Contact extends Component {
                                 <Col md="6" xl="5" className="mb-4">
                                     <Card className="dark-grey-text">
                                         <CardBody className="z-depth-2">
-                                            <form action="https://formspree.io/Sean.Pattee@blucodex.com" method="POST" >
+                                            <form action="/.netlify/functions/email" method="POST">
                                                 <h3 className="dark-grey-text text-center"><strong>Write to us:</strong></h3>
                                                 <hr/>
                                                 <Input label="Your name" icon="user" name="name"/>
-                                                <Input label="Your email" icon="envelope" name="_replyto"/>
+                                                <Input label="Your email" icon="envelope" name="from"/>
                                                 <Input label="Your message" icon="pencil" name="message" type="textarea" rows="3"/>
                                                 <div className="text-center mt-3 black-text">
                                                     <Button color="indigo" type="submit">Send</Button>
                                                 </div>
                                             </form>
-
                                         </CardBody>
                                     </Card>
                                 </Col>
