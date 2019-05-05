@@ -1,6 +1,8 @@
 let nodemailer = require('nodemailer');
 
 exports.handler = function(event, context, callback) {
+    console.log("event.body");
+    console.log(event.body);
     const data = JSON.parse(event.body);
 
     let transporter = nodemailer.createTransport({
