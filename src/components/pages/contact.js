@@ -1,7 +1,45 @@
 import React, { Component } from 'react';
-import { Mask, Row, Col, Button, View, Container, Card, CardBody, Input } from 'mdbreact';
+import axios from 'axios';
+import { Mask, Row, Col, Button, View, Container, Card, CardBody, Input, ToastContainer, toast } from 'mdbreact';
 
 class Contact extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            name: "",
+            email: "",
+            message: ""
+        };
+
+        this.handleNameChange = this.handleNameChange.bind(this);
+        this.handleEmailChange = this.handleEmailChange.bind(this);
+        this.handleMessageChange = this.handleMessageChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleNameChange(event) { this.setState({name: event.target.value}); }
+
+    handleEmailChange(event) { this.setState({email: event.target.value}); }
+
+    handleMessageChange(event) { this.setState({message: event.target.value}); }
+
+    handleSubmit(event) {
+        event.preventDefault();
+
+        axios.post("/.netlify/functions/email", this.state).then(res => {
+            toast.success("Message sent!");
+        }).catch(err => {
+            toast.error("Message failed to send. We apologize for this inconvenience. Please email Sean.Pattee@blucodex.com directly.");
+        });
+
+        this.setState({
+            name: "",
+            email: "",
+            message: ""
+        });
+    }
+
     render() {
         return (
             <div id="contact">
@@ -15,21 +53,19 @@ class Contact extends Component {
                                 <Col md="6" xl="5" className="mb-4">
                                     <Card className="dark-grey-text">
                                         <CardBody className="z-depth-2">
-                                            <form action="/.netlify/functions/email" method="POST" target="hiddenFrame" name="contactForm" id="contactForm">
+                                            <form onSubmit={this.handleSubmit}>
                                                 <h3 className="dark-grey-text text-center"><strong>Write to us:</strong></h3>
                                                 <hr/>
-                                                <Input label="Your name" icon="user" name="name" id="name"/>
-                                                <Input label="Your email" icon="envelope" name="email" id="email"/>
-                                                <Input label="Your message" icon="pencil" name="message" id="message" type="textarea" rows="3"/>
+                                                <Input label="Your name" value={this.state.name} onChange={this.handleNameChange} icon="user" name="name" id="name"/>
+                                                <Input label="Your email" value={this.state.email} onChange={this.handleEmailChange} icon="envelope" name="email" id="email"/>
+                                                <Input label="Your message" value={this.state.message} onChange={this.handleMessageChange} icon="pencil" name="message" id="message" type="textarea" rows="3"/>
                                                 <div className="text-center mt-3 black-text">
-                                                    <Button color="indigo" onClick={() => {
-                                                        document.getElementById("contactForm").submit();
-                                                        document.getElementById("name").value = "";
-                                                        document.getElementById("email").value = "";
-                                                        document.getElementById("message").value = "";
-                                                    }}>Send</Button>
+                                                    <Button color="indigo" type="submit">Send</Button>
                                                 </div>
-                                                <iframe name="hiddenFrame" width="0" height="0" style={{display: "none"}}/>
+                                                <ToastContainer
+                                                    hideProgressBar={true}
+                                                    newestOnTop={true}
+                                                />
                                             </form>
                                         </CardBody>
                                     </Card>
