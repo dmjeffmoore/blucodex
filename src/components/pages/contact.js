@@ -27,9 +27,9 @@ class Contact extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        axios.post("/.netlify/functions/email", this.state).then(res => {
+        axios.post("/.netlify/functions/email", this.state).then(() => {
             toast.success("Message sent!");
-        }).catch(err => {
+        }).catch(() => {
             toast.error("Message failed to send. We apologize for this inconvenience. Please email Sean.Pattee@blucodex.com directly.");
         });
 
