@@ -142,7 +142,7 @@ class Terms extends Component {
                 <h2>Contact Us</h2>
                 <p>If you have any questions about this Terms & Conditions, please contact us:</p>
                 <ul>
-                    <li>By email: Sean.Pattee@blucodex.com</li>
+                    <li>By email: dmjeffmoore@gmail.com</li>
 
                 </ul>
                 <br/>

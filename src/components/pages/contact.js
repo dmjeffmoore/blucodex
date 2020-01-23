@@ -30,7 +30,7 @@ class Contact extends Component {
         axios.post("/.netlify/functions/email", this.state).then(() => {
             toast.success("Message sent!");
         }).catch(() => {
-            toast.error("Message failed to send. We apologize for this inconvenience. Please email Sean.Pattee@blucodex.com directly.");
+            toast.error("Message failed to send. We apologize for this inconvenience. Please email dmjeffmoore@gmail.com directly.");
         });
 
         this.setState({
