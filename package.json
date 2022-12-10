@@ -5,7 +5,7 @@
   "dependencies": {
     "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "http-proxy-middleware": "^0.19.1",
     "mdbreact": "^4.10.0",
     "netlify-lambda": "^1.4.7",
